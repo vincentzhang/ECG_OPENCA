@@ -107,7 +107,7 @@ int main(void)
 		// Setup for output annotations
 
 		a[0].name = "atest"; a[0].stat = WFDB_WRITE ;
-		
+
 		if(annopen(record, a, 1) < 0)
 			//int c = getchar();
 			return 0;
