@@ -33,7 +33,20 @@
 #define MITDB				// Comment this line out to process AHA data.
 #ifdef MITDB
 //#define ECG_DB_PATH	"C:\\data\\others\\MITDB\\"	 // Path to where MIT/BIH data.
-#define ECG_DB_PATH	"C:/data/others/MITDB"	
+//#define ECG_DB_PATH	"C:/data/others/MITDB"	
+
+
+//#define ECG_DB_PATH "D:\\S60\\devices\\S60_3rd_FP2_SDK_v1.1\\epoc32\\winscw\\c\\Data\\Others\\MITDB"   //1
+//#define ECG_DB_PATH "D:/S60/devices/S60_3rd_FP2_SDK_v1.1/epoc32/winscw/c/Data/Others/MITDB"			//2
+//#define ECG_DB_PATH "epoc32\\winscw\\c\\Data\\Others\\MITDB"//3
+//#define ECG_DB_PATH "epoc32/winscw/c/Data/Others/MITDB"//4
+//#define ECG_DB_PATH	"C:\\data\\others\\MITDB"//5
+//#define ECG_DB_PATH	"C:/data/others/MITDB/"//6
+//
+//#define ECG_DB_PATH "D:\\S60\\devices\\S60_3rd_FP2_SDK_v1.1\\epoc32\\winscw\\c\\Data\\Others\\MITDB\\"   //7
+//#define ECG_DB_PATH "D:/S60/devices/S60_3rd_FP2_SDK_v1.1/epoc32/winscw/c/Data/Others/MITDB/"			//8
+//#define ECG_DB_PATH "epoc32\\winscw\\c\\Data\\Others\\MITDB\\"//9
+#define ECG_DB_PATH "epoc32/winscw/c/Data/Others/MITDB/"//10
 #define REC_COUNT	48
 int Records[REC_COUNT] = {100,101,102,103,104,105,106,107,108,109,111,112,
 							113,114,115,116,117,118,119,121,122,123,124,
@@ -183,6 +196,7 @@ int main(void)
      
 	
 	}
+	int c = getchar();
 	return 0;
 	}
 	/**********************************************************************
