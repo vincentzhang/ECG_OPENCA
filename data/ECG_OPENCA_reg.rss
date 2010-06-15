@@ -1,0 +1,21 @@
+/*
+============================================================================
+ Name        : ECG_OPENCA_reg.rss
+ Author      : Vincent
+ Copyright   : Your copyright notice
+ Description : This file contains all the resources for the ECG_OPENCA.
+============================================================================
+*/
+
+#include <appinfo.rh>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xE00E5A88
+
+RESOURCE APP_REGISTRATION_INFO
+    {
+    app_file = "ECG_OPENCA";
+    embeddability = KAppNotEmbeddable;
+    newfile = KAppDoesNotSupportNewFile;
+    }
+

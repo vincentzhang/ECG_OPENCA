@@ -1,0 +1,12 @@
+/*
+============================================================================
+ Name        : bld.inf
+ Author      : Vincent
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+               whole of a ECG_OPENCA.
+============================================================================
+*/
+
+PRJ_MMPFILES
+ECG_OPENCA.mmp
