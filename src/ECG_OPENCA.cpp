@@ -33,7 +33,7 @@
 #define MITDB				// Comment this line out to process AHA data.
 #ifdef MITDB
 #define ECG_DB_PATH	"C:\\data\\others\\MITDB\\"	 // Path to where MIT/BIH data.
-//#define ECG_DB_PATH	"C:/data/others/MITDB"	
+//#define ECG_DB_PATH	"C:/data/others/MITDB"
 
 
 //#define ECG_DB_PATH "D:\\S60\\devices\\S60_3rd_FP2_SDK_v1.1\\epoc32\\winscw\\c\\Data\\Others\\MITDB"   //1
