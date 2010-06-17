@@ -398,7 +398,7 @@ FINT annopen(char *record, WFDB_Anninfo *aiarray, unsigned int nann)
 		NULL) {
 		wfdb_error("annopen: can't write annotator %s for record %s\n",
 			 aiarray[i].name, record);
-	//	c = getchar();
+		//c = getchar();
 		return (-4);
 	    }
 	    oa->info.name = NULL;

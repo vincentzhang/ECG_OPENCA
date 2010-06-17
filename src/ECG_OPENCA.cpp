@@ -9,7 +9,7 @@
 
 // INCLUDE FILES
 
-
+#if 0
 //#include <windef.h>
 
 #include <stdio.h>
@@ -32,7 +32,9 @@
 //Our program
 #define MITDB				// Comment this line out to process AHA data.
 #ifdef MITDB
-#define ECG_DB_PATH	"C:\\data\\others\\MITDB\\"	 // Path to where MIT/BIH data.
+#define ECG_DB_PATH	"C:\\MITDB\\"	 // Path to where MIT/BIH data.
+	
+//#define ECG_DB_PATH		"\0"
 //#define ECG_DB_PATH	"C:/data/others/MITDB"
 
 
@@ -94,7 +96,7 @@ int main(void)
 	//printf("Press a character to exit!");
 	  printf("This is a demo for the ECG program!\n");
 	//int c = getchar();
-	setwfdb(ECG_DB_PATH) ;
+    	setwfdb(ECG_DB_PATH) ;
 	
 	// Analyze all 48 MIT/BIH Records.
 	 
@@ -104,7 +106,6 @@ int main(void)
 		printf("Reading...\n");
 		printf("Record %d\n",Records[recNum]) ;
 		
-		 
 		// Open a 2 channel record
 
 		if(isigopen(record,s,2) < 1)
@@ -121,9 +122,10 @@ int main(void)
 
 		a[0].name = "atest"; a[0].stat = WFDB_WRITE ;
 
+		sprintf(record,"%s%d",ECG_DB_PATH,Records[recNum]) ;
 		if(annopen(record, a, 1) < 0)
-			//int c = getchar();
 			return 0;
+		//sprintf(record,"%d",Records[recNum]) ;
 		
 		// Initialize sampling frequency adjustment.
 
@@ -180,7 +182,8 @@ int main(void)
 		//sprintf(fname,"%s.ate",record) ;
 		sprintf(fname,"%s.atest",record) ;
 		newAnn0 = fopen(fname,"rb") ;
-		sprintf(fname,"%s%s.ate",ECG_DB_PATH,record) ;
+	//	sprintf(fname,"%s%s.ate",ECG_DB_PATH,record) ;
+		sprintf(fname,"%s.ate",record) ;
 		newAnn1 = fopen(fname,"wb") ;
 
 		// Copy byte image of annotation file in this
@@ -253,3 +256,4 @@ int main(void)
 		return (x);
 		}
 	
+#endif

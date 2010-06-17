@@ -158,7 +158,6 @@ module.
 #include <wfdb/wfdblib.h>
 //#include <winuser.h>
 
-
 /* WFDB library functions */
 
 /* getwfdb is used to obtain the WFDB path, a list of places in which to search
