@@ -156,8 +156,6 @@ module.
 */
 
 #include <wfdb/wfdblib.h>
-//#include <winuser.h>
-
 
 /* WFDB library functions */
 
