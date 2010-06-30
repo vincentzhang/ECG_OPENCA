@@ -157,6 +157,10 @@ module.
 
 #include <wfdb/wfdblib.h>
 
+//I want to test the remote branch
+//I have cloned from origin to two local repositories:
+//The /cool and /cool2 directory, I want change the file wfdbio.c differetly in //the two directories. And then try to push the /cool2 and pull into /cool  
+
 /* WFDB library functions */
 
 /* getwfdb is used to obtain the WFDB path, a list of places in which to search
